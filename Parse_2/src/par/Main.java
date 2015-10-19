@@ -8,7 +8,7 @@ import javax.swing.UnsupportedLookAndFeelException;
 public class Main {
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stubb
+		// TODO Auto-generated method stubbb
 		 try {
 			UIManager.setLookAndFeel(
 			            UIManager.getSystemLookAndFeelClassName());
