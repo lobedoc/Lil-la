@@ -1,13 +1,17 @@
 package hf6_2;
 
+import java.util.EnumSet;
+
 import hf6_2.Ingredients.Osszetevok;
 
 public class Masa implements Runnable {
 	
 public void run() {
 	
-	//EnumSet<Ingredients.Osszetevok> cuccok = EnumSet.of(Ingredients.Osszetevok.TEJSZIN, Ingredients.Osszetevok.EPER, Ingredients.Osszetevok.CUKOR, Ingredients.Osszetevok.ZSELATIN);
+	EnumSet<Ingredients.Osszetevok> cuccok = EnumSet.of(Ingredients.Osszetevok.TEJSZIN, Ingredients.Osszetevok.EPER, Ingredients.Osszetevok.CUKOR, Ingredients.Osszetevok.ZSELATIN);
 	Ingredients mixeli = new Ingredients();
+	
+
 	while(Ingredients.varakozik != 1)
 	{
 		try {

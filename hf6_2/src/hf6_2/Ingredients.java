@@ -1,7 +1,10 @@
 package hf6_2;
 
+import java.util.ArrayList;
+import java.util.Random;
+
 public class Ingredients {
-	
+	public static ArrayList<Osszetevok> kihagy = new ArrayList<Osszetevok>();
 	public volatile int szabade_mixer = 1;
 	public static volatile int varakozik = 0;
 	Ingredients()
@@ -51,4 +54,13 @@ public class Ingredients {
 		szabade_mix = 0;
 
 	}
+	
+	public static void getRandom(){
+	    Osszetevok[] ossz = Osszetevok.values();
+	    Osszetevok[] ossz1 = Osszetevok.values();
+	    Random generator = new Random();
+	    kihagy.add(ossz[generator.nextInt(ossz.length)]);
+	    kihagy.get(varakozik).setSzabad(0);   
+	    }
+	    
 }
